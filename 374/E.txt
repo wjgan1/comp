@@ -1,0 +1,6 @@
+It's hard to find a single algorithm that solves this problem, but if we write two algorithms for two cases, i.e. when p < 100 and p >= 100, then the problem becomes simpler.
+
+General remarks:
+	Though the algorithms are slightly different, they both use some general properties of this problem. If you decide to start singing in a segment, you should sing as long as you can. If you ended early by k songs, your pause would end k*p earlier but the maximum number of songs you can gain in that period is k, which you could have just gotten by singing all the way. This holds true even if you decide to end unnecessarily early several times.
+
+1st case: p < 100
